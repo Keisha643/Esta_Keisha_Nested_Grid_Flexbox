@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Nested Grid, Flexbox</title>
 </head>
 <body>
-    
+    <section class="grid-con center-grid-con">
+        <h1 class="hidden"></h1>
+        
+    <div class="hero-content col-start-1 col-end-3">
+        <h1>Melon Rush</h1>
+        <p>Summer Fun Flavour!</p>
+        
+        <img src="images/Swerve_Can_Watermelon.jpg" alt="Hero placeholder" class="hero-img">
+
+        <div id="book-now-header" class="m-col-span-2">
+                <a href="#" class="cta-btn">Book Now</a>
+            </div>
+        
+    </div>
+    </section>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
