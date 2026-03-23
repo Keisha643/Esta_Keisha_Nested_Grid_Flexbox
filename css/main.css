@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(45, 45, 45);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header.full-width-grid-con {
+    height: 300px;
+    position: relative;
+    display: grid;
+}
+
+#book-now a {
+    text-align: right;
+}
+
+.grid-con img {
+    grid-row: 1;
+}
+
+.grid-con h2 {
+    grid-row: 1;
+}
+
+.grid-con p {
+    grid-row: 2;
+} 
+
+#hero-image {
+    justify-self: center; 
+    grid-row: 1;
+    height: 100%;
+    object-fit: cover;
+}
+
+#nested-hero-grid {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+#nested-hero-grid h2 {
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    height: 50px;
+    text-shadow: 4px 3px rgb(94, 94, 94);
+}
+
+#nested-hero-grid p {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+    text-shadow: 2px 2px #000000;
+}
+
+#nested-hero-grid a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    box-shadow: 3px 5px rgb(75, 75, 75);
+}
+
+#nested-hero-grid a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    #nested-hero-grid h2 {
+        font-size: 36px;
+        height: 100px;
+    }
+
+    #nested-hero-grid a {
+        height: 60px;
+    }
+}

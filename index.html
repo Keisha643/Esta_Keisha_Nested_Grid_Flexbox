@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/grid.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Nested Grid, Flexbox</title>
 </head>
-<body>
-    <section class="grid-con center-grid-con">
-        <h1 class="hidden"></h1>
-        
-    <div class="hero-content col-start-1 col-end-3">
-        <h1>Melon Rush</h1>
-        <p>Summer Fun Flavour!</p>
-        
-        <img src="images/Swerve_Can_Watermelon.jpg" alt="Hero placeholder" class="hero-img">
+    <body>
+        <h1 class="visually-hidden">Swerve Hero Section</h1>
+        <header class="full-width-grid-con">
+            <img src="images/swerve-zero-can.jpg" alt="Swerve Watermelon Can" id="hero-image" class="col-span-full">
 
-        <div id="book-now-header" class="m-col-span-2">
-                <a href="#" class="cta-btn">Book Now</a>
-            </div>
-        
-    </div>
-    </section>
+            <section id="nested-hero-grid" class="grid-con">
+                <h2 class="col-span-full">Zero Flavour - Sugar Free Drink!</h2>
+                <p class=" hero-p-1 col-start-1 col-end-3 m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-5">All The Thrill.<br>
+                Zero The Fill.</p>
+                <a class="col-start-3 col-end-5 m-col-start-11 m-col-end-13" href="#">Book Now</a>
+            </section>
 
-    <script src="js/main.js"></script>
-</body>
+        </header>
+
+        <script src="js/main.js"></script>
+    </body>
 </html>
